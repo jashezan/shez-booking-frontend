@@ -1,6 +1,8 @@
+@import "../../styles/variables";
+
 .featured {
   width: 100%;
-  max-width: 1200px;
+  max-width: $desktop-screen;
   display: flex;
   justify-content: space-between;
   gap: 40px;

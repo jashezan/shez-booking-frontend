@@ -10,7 +10,7 @@
 
 .headerContainer {
   width: 100%;
-  max-width: 1200px;
+  max-width: $desktop-screen;
   margin: 20px 0px 100px 0px;
 }
 
@@ -55,7 +55,7 @@
   position: absolute;
   bottom: -25px;
   width: 100%;
-  max-width: 1200px;  
+  max-width: $desktop-screen;  
 }
 
 .headerIcon{
