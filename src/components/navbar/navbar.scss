@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+@import '../../styles/reset';
+
+.navBar{
+  height: 50px;
+  background-color: $primary-color;
+  display: flex;
+  justify-content: center;
+}
+
+.navContainer{
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .navButton{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: $primary-color;
+  }
+}
