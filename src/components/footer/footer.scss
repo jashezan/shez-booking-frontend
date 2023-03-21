@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.footer {
+  width: 100px;
+  width: $desktop-screen;
+  font-size: 12px;
+}
+
+.fLists {
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fList{
+  list-style-type: none;
+  padding: 0px;
+}
+
+.fListItem{
+  color: $primary-color;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
