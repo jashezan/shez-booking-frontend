@@ -1,9 +1,11 @@
 import "./searchItem.scss";
 import React from 'react'
+import { Link } from "react-router-dom";
+
 
 const SearchItem = ({props}) => {
   return (
-    <div className="searchItem">
+    <Link to={`./details`} className="searchItem">
       <img src={props.img} alt={props.desc.title} className="siImg" />
       <div className="siDesc">
         <h1 className="siTitle">{props.desc.title}</h1>
@@ -25,7 +27,7 @@ const SearchItem = ({props}) => {
           <button className="siCheckAvailablity">See Availablity</button>
         </div>
       </div>
-    </div>
+    </Link>
   )
 }
 

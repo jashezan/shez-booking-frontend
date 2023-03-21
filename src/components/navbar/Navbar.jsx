@@ -1,14 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./navbar.scss";
 
 const Navbar = () => {
   return (
     <nav className="navBar">
       <div className="navContainer">
-        <div className="logo">shezBooking</div>
+        <div className="logo">
+          <Link to="/">Shez Booking</Link>
+        </div>
         <div className="navItems">
-          <button className="navButton">Register</button>
-          <button className="navButton">Login</button>
+          <button className="navButton">
+            <Link to={"/register"}>Register</Link>
+          </button>
+          <button className="navButton">
+            <Link to={"/login"}>Login</Link>
+          </button>
         </div>
       </div>
     </nav>

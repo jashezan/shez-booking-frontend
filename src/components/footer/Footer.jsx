@@ -20,7 +20,7 @@ const Footer = () => {
           );
         })}
       </div>
-      <div className="fText">Copyright @ 2023 shezBooking.</div>
+      <div className="fText">Copyright @ 2023 Shez Booking.</div>
     </footer>
   );
 };

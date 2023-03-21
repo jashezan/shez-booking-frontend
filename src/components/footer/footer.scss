@@ -4,6 +4,7 @@
   width: 100px;
   width: $desktop-screen;
   font-size: 12px;
+  margin: 20px auto;
 }
 
 .fLists {
@@ -22,4 +23,9 @@
   color: $primary-color;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+.fText{
+  font-size: 16px;
+  margin-bottom: 10px;
 }
