@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import "./list.scss";
-import Navbar from "../../components/navbar/Navbar";
-import Header from "../../components/header/Header";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { DateRange } from "react-date-range";
+import Navbar from "../../components/navbar/Navbar";
+import Header from "../../components/header/Header";
+import SearchItem from "../../components/searchItem/SearchItem";
+import "./list.scss";
+import hotelList from "../../data/hotelList";
 const List = () => {
   const location = useLocation();
   const [destination, setDestination] = useState(location.state.destination);
@@ -102,7 +104,11 @@ const List = () => {
               <button type="submit">Search</button>
             </form>
           </div>
-          <div className="listResult"></div>
+          <div className="listResult">
+            {hotelList.map((hotel, index) => {
+              return (<SearchItem key={index} props={hotel}/>)
+            })}
+          </div>
         </div>
       </div>
     </div>
